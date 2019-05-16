@@ -14,7 +14,7 @@ $("#report-btn").on("click",function(){
     var self = $(this);
     var param = '';//加载html变量
     self.addClass("loading").html("正在加载中");
-    $.get("js/json.js",function(data){
+    $.post("js/json.js",function(data){
         allLen = data.length;//获取json长度
         var data1 = data[indexNum];
         var dlen = data1.length;
