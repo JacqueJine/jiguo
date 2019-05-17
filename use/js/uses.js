@@ -7,7 +7,6 @@ $(function(){
                     $("#pic").html(arrText(data.sy_list));
                 }
                 var last_sy=data.sy_list[data.sy_list.length-1];
-                console.log(last_sy)
                 if(document.readyState === "complete"){
                     $(".jia-z").html('<span class="no-more">没有更多啦~</span>');
                 }else{
