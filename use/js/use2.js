@@ -7,7 +7,6 @@ $(window).scroll(function(){
     var screenH=$(window).height();
     var allBodyH=$(document).height();
     var footH=$("footer").height();
-    console.log(scrollH+screenH,allBodyH-footH-100);
     if(scrollH+screenH>=allBodyH-footH-100){
         load = true;
         $.ajax({
@@ -19,7 +18,6 @@ $(window).scroll(function(){
                      $("#pic").html(allh+arrText(data.use2_arr[i]));
                  }
                  indexNum++;
-                 console.log(indexNum);
                 load = false;
                 if(indexNum>=data.use2_arr.length){
                     $(".jia-z").html("没有更多啦");
